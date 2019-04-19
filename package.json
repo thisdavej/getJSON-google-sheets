@@ -1,0 +1,21 @@
+{
+  "name": "getjson-google-sheets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "UrlFetchApp.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/ignore/"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
+}

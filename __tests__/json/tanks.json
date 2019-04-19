@@ -1,0 +1,44 @@
+[
+    {
+      "Tank": "Tank1",
+      "watertemp": {
+        "time": "2019-04-04 17:06 GMT",
+        "value": 72.74
+      }
+    },
+    {
+      "Tank": "Tank2",
+      "watertemp": {
+        "time": "2019-04-04 17:06 GMT",
+        "value": 72.17
+      }
+    },
+    {
+      "Tank": "Tank1",
+      "watertemp": {
+        "time": "2019-04-04 17:05 GMT",
+        "value": 72.66
+      }
+    },
+    {
+      "Tank": "Tank2",
+      "watertemp": {
+        "time": "2019-04-04 17:05 GMT",
+        "value": 72.18
+      }
+    },
+    {
+      "Tank": "Tank1",
+      "watertemp": {
+        "time": "2019-04-04 17:04 GMT",
+        "value": 72.04
+      }
+    },
+    {
+      "Tank": "Tank2",
+      "watertemp": {
+        "time": "2019-04-04 17:04 GMT",
+        "value": 72.42
+      }
+    }
+  ]
