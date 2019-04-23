@@ -2,7 +2,7 @@
 
 Functions to fetch, filter, and sort JSON Web APIs in Google Sheets and render the results using a simple and powerful string template.
 
-The `GetJSON-functions.gs` file adds a `=GETJSON()` function and other functions to your spreadsheet, and you're off and running!
+The `GetJSON-functions.gs` file adds a `=GETJSON()` function and other functions to your spreadsheet, and you're off and running!  See [Fetching, Filtering, and Sorting JSON APIs in Google Sheets: The Missing Functions](https://thisdavej.com/fetching-filtering-and-sorting-json-apis-in-google-sheets-the-missing-functions/) for the full documentation or continue reading for a high level jump-start.
 
 ## Installation
 
@@ -231,8 +231,8 @@ The parameters include:
 
 ### Additional Documentation and Examples
 
-Read the official documentation (link coming soon) for additional information and examples.
+Please see [Fetching, Filtering, and Sorting JSON APIs in Google Sheets: The Missing Functions](https://thisdavej.com/fetching-filtering-and-sorting-json-apis-in-google-sheets-the-missing-functions/) for the full documentation and additional examples.
 
 ## License
 
-MIT © [Dave Johnson (thisDaveJ)](http://thisdavej.com)
+MIT © [Dave Johnson (thisDaveJ)](https://thisdavej.com)

@@ -1,5 +1,6 @@
 /**
  * @file Google Sheets functions to fetch, filter, and sort JSON data from Web APIs.
+ * GitHub URL: https://github.com/thisdavej/getJSON-google-sheets
  * @author Dave Johnson (https://thisdavej.com/)
  */
 
