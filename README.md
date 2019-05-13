@@ -179,7 +179,7 @@ To access the value associated with the "Currency Name" nested attribute, use th
 
 To access the value associated with the "5. Exchange Rate" attribute which contains a dot, surround the attribute name in double quotes.  The template will look like this:
 
-`{{Realtime Currency Exchange Rate."5. Exchange Rate}}"`
+`{{Realtime Currency Exchange Rate."5. Exchange Rate"}}`
 
 The double quotes ensure that the dot in the attribute name is not interpreted as an additional nested attribute.
 
