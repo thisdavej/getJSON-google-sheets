@@ -159,6 +159,30 @@ Spreadsheet result:
 | 7   |  Tank1   |        2019-04-06 16:04 GMT        | 72.7      |
 | 8   |  Tank2   |        2019-04-06 16:04 GMT        | 72.81     |
 
+
+## Example: Retrieve Nested JSON Properties (Spaces and Dots in JSON Attributes)
+
+Given the following JSON:
+
+```json
+{
+    "Realtime Currency Exchange Rate": {
+        "Currency Name": "Japanese Yen",
+        "5. Exchange Rate": "109.22000000",
+    }
+}
+```
+
+To access the value associated with the "Currency Name" nested attribute, use this template:
+
+`Realtime Currency Exchange Rate.Currency Name`
+
+To access the value associated with the "5. Exchange Rate" attribute which contains a dot, surround the attribute name in double quotes.  The template will look like this:
+
+`Realtime Currency Exchange Rate."5. Exchange Rate"`
+
+The double quotes ensure that the dot in the attribute name is not interpreted as an additional nested attribute.
+
 ## GETJSON_SORTED
 
 The `GETJSON_SORTED` function is used as follows (parameters in square brackets are optional):

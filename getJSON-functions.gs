@@ -10,7 +10,7 @@ function JSONtoObject(url) {
   var json = response.getContentText();
 
   // convert keys to lower case so case insensitive
-  json = json.replace(/"([\w]+)":/g, function($0, $1) {
+  json = json.replace(/"([^"]+)":/g, function($0, $1) {
     return '"' + $1.toLowerCase() + '":';
   });
   var obj = JSON.parse(json);
@@ -37,14 +37,21 @@ function filterObject(obj, filterExpression) {
   return obj;
 }
 
+
+function removeDoubleQuotes(s) {
+  return s.replace(/(^"|"$)/g, '')
+}
+
+
 // Allows us to get values associated with JSON attributes such as "Field1" and nested attributes
 // such as "watertemp.time"
 function getJsonValue(path, obj) {
   var NOT_FOUND = "notFound";
-  var parts = path.split(".");
+  var parts = path.split(/(?!\B"[^"]*)\.(?![^"]*"\B)/);
   var part;
-  var last = parts.pop();
+  var last = removeDoubleQuotes(parts.pop());
   while ((part = parts.shift())) {
+    part = removeDoubleQuotes(part);
     if (typeof obj[part] != "object") return NOT_FOUND;
     obj = obj[part];
   }
