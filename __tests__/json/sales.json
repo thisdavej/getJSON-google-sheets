@@ -1,0 +1,47 @@
+[
+  {
+    "person": {
+      "firstName": "Bob",
+      "lastName": "Smith"
+    },
+    "sales": [
+      {
+        "date": "2019-09-13",
+        "company": "ACME",
+        "items": ["apples", "oranges"],
+        "amount": 22.34
+      },
+      {
+        "date": "2019-09-14",
+        "company": "Random Corp",
+        "items": ["bananas", "tangerines"],
+        "amount": 33.33
+      }
+    ]
+  },
+  {
+    "person": {
+      "firstName": "Sally",
+      "lastName": "Jones"
+    },
+    "sales": [
+      {
+        "date": "2019-09-08",
+        "company": "Company A",
+        "items": ["carrots", "celery"],
+        "amount": 42.24
+      },
+      {
+        "date": "2019-09-14",
+        "company": "Company B",
+        "amount": 13.56
+      },
+      {
+        "date": "2019-09-15",
+        "company": "Company C",
+        "items": ["potatoes", "lemons"],
+        "amount": 54.33
+      }
+    ]
+  }
+]

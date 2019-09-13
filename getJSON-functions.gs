@@ -46,17 +46,34 @@ function removeDoubleQuotes(s) {
 // Allows us to get values associated with JSON attributes such as "Field1" and nested attributes
 // such as "watertemp.time"
 function getJsonValue(path, obj) {
+  function cleanObjPart(s) {
+    // Handle the case when processing an array element (e.g. "jobs[0]")
+    var re = /(\w+)\s*\[\s*(\d+)\s*\]\s*/;
+    var match = re.exec(s);
+    var objPart;
+    if (match != null) {
+      var elem1 = match[1];
+      var index = parseInt(match[2], 10);
+      objPart = obj[elem1][index];
+    }
+    else {
+      objPart = obj[s];
+    }
+    return objPart;
+  }
+
   var NOT_FOUND = "notFound";
   var parts = path.split(/(?!\B"[^"]*)\.(?![^"]*"\B)/);
   var part;
   var last = removeDoubleQuotes(parts.pop());
   while ((part = parts.shift())) {
     part = removeDoubleQuotes(part);
-    if (typeof obj[part] != "object") return NOT_FOUND;
-    obj = obj[part];
+    var objPart = cleanObjPart(part);
+    if (typeof objPart != "object") return NOT_FOUND;
+    obj = objPart;
   }
 
-  var r = obj[last];
+  var r = cleanObjPart(last);
   return r === undefined ? NOT_FOUND : r;
 }
 
