@@ -34,4 +34,27 @@ describe("GETJSON sales tests", () => {
 
     expect(result).toEqual(expected);
   });
+
+  it("returns nested sales company for multiple records", () => {
+    template = "{{person.firstName}} || {{sales[0].company}}";
+    const result = GETJSON(url, template);
+    const expected = [
+      ["Bob", "ACME"],
+      ["Sally", "Company A"]
+    ];
+
+    expect(result).toEqual(expected);
+  });
+
+  it("returns nested sales company for multiple records (two companies)", () => {
+    template =
+      "{{person.firstName}} || {{sales[0].company}} || {{sales[1].company}}";
+    const result = GETJSON(url, template);
+    const expected = [
+      ["Bob", "ACME", "Random Corp"],
+      ["Sally", "Company A", "Company B"]
+    ];
+
+    expect(result).toEqual(expected);
+  });
 });
