@@ -6,14 +6,14 @@
     },
     "sales": [
       {
-        "date": "2019-09-13",
         "company": "ACME",
+        "date": "2019-09-13",
         "items": ["apples", "oranges"],
         "amount": 22.34
       },
       {
-        "date": "2019-09-14",
         "company": "Random Corp",
+        "date": "2019-09-14",
         "items": ["bananas", "tangerines"],
         "amount": 33.33
       }
@@ -26,19 +26,19 @@
     },
     "sales": [
       {
-        "date": "2019-09-08",
         "company": "Company A",
+        "date": "2019-09-08",
         "items": ["carrots", "celery"],
         "amount": 42.24
       },
       {
-        "date": "2019-09-14",
         "company": "Company B",
+        "date": "2019-09-14",
         "amount": 13.56
       },
       {
-        "date": "2019-09-15",
         "company": "Company C",
+        "date": "2019-09-15",
         "items": ["potatoes", "lemons"],
         "amount": 54.33
       }

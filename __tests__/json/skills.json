@@ -1,0 +1,36 @@
+[
+    {
+      "name": "Bob",
+      "skills": [
+        {
+          "name": "Negotiation",
+          "endorsements": "6"
+        },
+        {
+          "name": "Sales",
+          "endorsements": "4"
+        },
+        {
+          "name": "Procurement",
+          "endorsements": "3"
+        }
+      ]
+    },
+    {
+      "name": "Sally",
+      "skills": [
+        {
+          "name": "Marketing",
+          "endorsements": "6"
+        },
+        {
+          "name": "Sales",
+          "endorsements": "4"
+        },
+        {
+          "name": "Procurement",
+          "endorsements": "3"
+        }
+      ]
+    }
+  ]
