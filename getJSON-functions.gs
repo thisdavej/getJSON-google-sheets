@@ -274,16 +274,16 @@ function GETJSON_MIN(url, field, filterExpression, primer) {
  * Un-comment the following lines to test outside of Google sheets using npm run test
  */
 
-const UrlFetchApp = require("./__tests__/ignore/UrlFetchApp");
-module.exports.GETJSON = GETJSON;
-module.exports.GETJSON_SORTED = GETJSON_SORTED;
-module.exports.GETJSON_MIN = GETJSON_MIN;
-module.exports.GETJSON_MAX = GETJSON_MAX;
+// const UrlFetchApp = require("./__tests__/ignore/UrlFetchApp");
+// module.exports.GETJSON = GETJSON;
+// module.exports.GETJSON_SORTED = GETJSON_SORTED;
+// module.exports.GETJSON_MIN = GETJSON_MIN;
+// module.exports.GETJSON_MAX = GETJSON_MAX;
 
-// used for testing primer with sort function
-function stringLength(s) {
-  return s.length;
-}
+// // used for testing primer with sort function
+// function stringLength(s) {
+//   return s.length;
+// }
 
 /**
  * End of testing code
